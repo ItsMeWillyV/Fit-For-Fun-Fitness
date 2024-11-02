@@ -14,23 +14,45 @@
         function printQuery() {
             const query = window.location.search.substring(1);
             const vars = query.split("&");
-
             for (let i = 0; i < vars.length; i++) {
                 const pair = vars[i].split("=");
-                document.write(pair[0] + ": " + pair[1] + "<br>");
+                document.write(`<p>${pair[0]}: ${pair[1]}</p>`);
             }
         }
     </script>
 </head>
 
 <body>
-    <div class="container">
-        <h2>Thank you for requesting an appt! We will be in touch soon!</h2>
-
-        <script>
-            printQuery();
-        </script>
-    </div>
+    <header>
+        <h1>Fit For Fun Fitness</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                    <a href="classes.html">Classes</a>
+                    <a href="info.html">Information</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Thank You For Requesting an Appiontment!<br>We Will Be in Touch Soon!</h2>
+        <fieldset>
+            <legend>Submitted Data</legend>
+            <div style="text-align: center;">
+                <script>
+                    printQuery();
+                </script>
+            </div>
+            <form action="index.html">
+                <br>
+                <button type="submit">Back To Home</button>
+            </form>
+        </fieldset>
+    </section>
+    <footer>
+        <p><a href="https://github.com/ItsMeWillyV" target="_blank">&copy; William Vanderpool 2024</a></p>
+    </footer>
 </body>
 
 </html>
