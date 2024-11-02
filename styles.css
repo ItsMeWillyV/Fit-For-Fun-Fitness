@@ -120,7 +120,6 @@ img {
     border: var(--black);
     width: 100%;
     font-weight: bold;
-    color: var(--black);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: 2px solid var(--black);
     
@@ -170,4 +169,25 @@ img {
     margin: 0;
     padding-left: 10px;
     background-color: var(--white);
+}
+
+form {
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 80%;
+    margin: auto;
+}
+
+label {
+    display: block;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+input, select {
+    position: absolute;
+    left: 20%;
+    width: 60%;
+    border-radius: 15px;
+    font-size: 1.2em;
 }

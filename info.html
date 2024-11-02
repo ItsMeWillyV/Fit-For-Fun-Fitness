@@ -25,7 +25,41 @@
         </nav>
     </header>
     <section>
-        
+        <h2>Request Information</h2>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="fname">
+                    First Name:
+                    <input type="text" name="fname" placeholder="First Name" autofocus required>
+                </label>
+                <label for="fname">
+                    Last Name:
+                    <input type="text" name="lname" placeholder="Last Name" required>
+                </label>
+                <label for="lname">
+                    Email:
+                    <input type="email" name="email" placeholder="Email" required>
+                </label>
+                <label for="lname">
+                    Phone Number:
+                    <input type="tel" name="tel" placeholder="Phone Number" required>
+                </label>
+                <label for="contact">
+                    Best way to reach:
+                    <select name="contact">
+                        <option value="email">Email</option>
+                        <option value="tel">Phone</option>
+                        <option value="owl">Owl</option>
+                        <option value="pidgeon">Pidgeon</option>
+                        <option value="telegraph">Telegraph</option>
+                        <option value="disc">Discord</option>
+                        <option value="facebook">Facebook</option>
+                    </select>
+                </label>
+                <button type="submit" value="Submit">Submit</button>
+            </fieldset>
+        </form>
     </section>
     <footer>
         <p><a href="https://github.com/ItsMeWillyV" target="_blank">&copy; William Vanderpool 2024</a></p>
