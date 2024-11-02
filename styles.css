@@ -2,14 +2,18 @@
 
 :root {
     --primary: #9e1616;
-    --secondary: #d42525;
+    --accent: #d42525;
+    --black: #111111;
+    --white: #eeeeee;
+    --light-gray: #dddddd;
+    --gray: #999999;
 }
 
 body {
     margin: 0;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: var(--white);
+    color: var(--black);
 }
 
 
@@ -33,7 +37,7 @@ header h1 {
     font-family: 'Playwrite HR';
     font-weight: bolder;
     font-size: 4em;
-    color: #000000;
+    color: var(--white);
 }
 
 header nav ul {
@@ -48,15 +52,15 @@ header nav ul li {
 
 header nav a {
     text-decoration: none;
-    background-color: var(--secondary);
-    color: #ffffff;
+    background-color: var(--accent);
+    color: var(--white);
     padding: 0.5em;
     border-radius: 15px;
 }
 
 header nav a:hover {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: var(--white);
+    color: var(--black);
 }
 
 footer {
@@ -75,7 +79,7 @@ footer a {
     font-family: 'Playwrite HR';
     font-weight: bolder;
     font-size: 2em;
-    color: #000000;
+    color: var(--white);
 }
 
 section {
@@ -104,4 +108,51 @@ img {
 .gallery img {
     width: 30%;
     border-radius: 15px;
+}
+
+.classes {
+    border-collapse: collapse;
+    border: var(--black);
+    width: 100%;
+    font-weight: bold;
+    color: var(--black);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px solid var(--black);
+    
+}
+
+.classes th {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background-color: var(--accent);
+    text-align: center;
+    border: 2px solid var(--black);
+}
+
+.classes td {
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-gray);
+    font-size: 0.5em;
+    border-right: 2px solid var(--black);
+    border-left: 2px solid var(--black);
+    border-top: 2px solid var(--gray);
+    border-bottom: 2px solid var(--gray);
+}
+
+.blue div {
+    border-left: 8px solid blue;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding-left: 10px;
+}
+
+.classes td h2, .classes td p {
+    margin: 0;
+}
+
+.classes td p {
+    font-weight: 100;
+    font-size: 1.25em;
 }
