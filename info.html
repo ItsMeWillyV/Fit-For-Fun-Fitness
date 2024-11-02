@@ -31,23 +31,23 @@
                 <legend>Contact Information</legend>
                 <label for="fname">
                     First Name:
-                    <input type="text" name="fname" placeholder="First Name" autofocus required>
+                    <input type="text" name="fname" placeholder="First Name" autofocus required class="text-input">
                 </label>
                 <label for="fname">
                     Last Name:
-                    <input type="text" name="lname" placeholder="Last Name" required>
+                    <input type="text" name="lname" placeholder="Last Name" required class="text-input">
                 </label>
                 <label for="lname">
                     Email:
-                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="email" name="email" placeholder="Email" required class="text-input">
                 </label>
                 <label for="lname">
                     Phone Number:
-                    <input type="tel" name="tel" placeholder="Phone Number" required>
+                    <input type="tel" name="tel" placeholder="Phone Number" required class="text-input">
                 </label>
-                <label for="contact">
+                <label for="contact" >
                     Best way to reach:
-                    <select name="contact">
+                    <select name="contact" class="text-input">
                         <option value="email">Email</option>
                         <option value="tel">Phone</option>
                         <option value="owl">Owl</option>
@@ -57,8 +57,73 @@
                         <option value="facebook">Facebook</option>
                     </select>
                 </label>
-                <button type="submit" value="Submit">Submit</button>
             </fieldset>
+            <br>
+            <fieldset>
+                <legend>Classes</legend>
+                <h3>Choose the classes you are interested in</h3>
+                <div class="check-container">
+                    <label for="cross">
+                        Cross Training
+                        <input type="checkbox" name="cross">
+                    </label>
+                    <label for="sprint">
+                        Sprint
+                        <input type="checkbox" name="sprint">
+                    </label>
+                    <label for="spin">
+                        Spin
+                        <input type="checkbox" name="spin">
+                    </label>
+                    <label for="bodypump">
+                        BodyPump
+                        <input type="checkbox" name="bodypump">
+                    </label>
+                    <label for="bodycombat">
+                        BodyCombat
+                        <input type="checkbox" name="bodycombat">
+                    </label>
+                    <label for="advcross">
+                        Advanced Cross Training
+                        <input type="checkbox" name="advcross">
+                    </label>
+                    <label for="mixxedfit">
+                        MixxedFIT
+                        <input type="checkbox" name="mixxedfit">
+                    </label>
+                    <label for="zumba">
+                        Zumba
+                        <input type="checkbox" name="zumba">
+                    </label>
+                </div>
+                <h3>Do you prefer AM or PM classes?</h3>
+                <input type="radio" id="am" name="classtime" value="am">
+                <label for="am" class="radio">AM</label>
+                <br>
+                <input type="radio" id="pm" name="classtime" value="pm">
+                <label for="pm" class="radio">PM</label>
+                <br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Misc</legend>
+                <div>
+                    <label for="tac">
+                        I accept the Terms and Conditions
+                        <input type="checkbox" name="tac" required>
+                    </label>
+                    <label for="marketing">
+                        Send me 1000 marketing emails every 5 minutes
+                        <input type="checkbox" name="marketing" checked>
+                    </label>
+                    <label for="sell">
+                        Sell my data
+                        <input type="checkbox" name="sell" checked>
+                    </label>
+                </div>
+            </fieldset>
+            <br>
+            <button type="submit" value="Submit">Submit</button>
         </form>
     </section>
     <footer>
