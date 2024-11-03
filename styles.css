@@ -104,6 +104,10 @@ img {
     pointer-events: none;
 }
 
+/* 
+    Image Gallery
+*/
+
 .gallery {
     display: flex;
     justify-content: center;
@@ -114,6 +118,10 @@ img {
     width: 30%;
     border-radius: 15px;
 }
+
+/* 
+    Class Table
+*/
 
 .classes {
     border-collapse: collapse;
@@ -170,6 +178,10 @@ img {
     padding-left: 10px;
     background-color: var(--white);
 }
+
+/* 
+    Form
+*/
 
 form {
     font-weight: bold;
