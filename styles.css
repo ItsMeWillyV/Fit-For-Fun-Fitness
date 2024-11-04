@@ -11,7 +11,7 @@
 
 body {
     margin: 0;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, 'Anton';
     background-color: var(--white);
     color: var(--black);
 }
