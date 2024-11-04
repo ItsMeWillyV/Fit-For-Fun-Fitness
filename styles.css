@@ -191,7 +191,7 @@ form {
 }
 
 form button {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, 'Anton';
     font-weight: bolder;
     font-size: 2em;
     color: var(--black);
