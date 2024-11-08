@@ -31,23 +31,23 @@
                 <legend>Contact Information</legend>
                 <label for="fname">
                     First Name:
-                    <input type="text" name="fname" placeholder="First Name" autofocus required class="text-input">
+                    <input type="text" name="fname" id="fname" placeholder="First Name" autofocus required class="text-input">
                 </label>
-                <label for="fname">
+                <label for="lname">
                     Last Name:
-                    <input type="text" name="lname" placeholder="Last Name" required class="text-input">
+                    <input type="text" name="lname" id="lname" placeholder="Last Name" required class="text-input">
                 </label>
-                <label for="lname">
+                <label for="email">
                     Email:
-                    <input type="email" name="email" placeholder="Email" required class="text-input">
+                    <input type="email" name="email" id="email" placeholder="Email" required class="text-input">
                 </label>
-                <label for="lname">
+                <label for="tel">
                     Phone Number:
-                    <input type="tel" name="tel" placeholder="Phone Number" required class="text-input">
+                    <input type="tel" name="tel" id="tel" placeholder="Phone Number" required class="text-input">
                 </label>
                 <label for="contact" >
                     Best way to reach:
-                    <select name="contact" class="text-input">
+                    <select name="contact" id="contact" class="text-input">
                         <option value="email">Email</option>
                         <option value="tel">Phone</option>
                         <option value="owl">Owl</option>
@@ -110,15 +110,15 @@
                 <div>
                     <label for="terms">
                         I accept the <a href="terms.html">Terms and Conditions</a>
-                        <input type="checkbox" name="terms" required>
+                        <input type="checkbox" name="terms" id="terms" required>
                     </label>
                     <label for="marketing">
                         Send me 1000 marketing emails every 5 minutes
-                        <input type="checkbox" name="marketing" checked>
+                        <input type="checkbox" name="marketing" id="marketing" checked>
                     </label>
                     <label for="sell">
                         Sell my data
-                        <input type="checkbox" name="sell" checked>
+                        <input type="checkbox" name="sell" id="sell" checked>
                     </label>
                 </div>
             </fieldset>
